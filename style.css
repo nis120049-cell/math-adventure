@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
+
+    background:
+        linear-gradient(
+            180deg,
+            #241641,
+            #70405f,
+            #e28a63
+        );
+}
+
+.game {
+    min-height: 100vh;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px;
+
+    background: rgba(20, 15, 35, 0.65);
+    backdrop-filter: blur(12px);
+}
+
+.game-card {
+    width: min(90%, 600px);
+
+    margin: 100px auto;
+
+    padding: 30px 20px;
+
+    text-align: center;
+
+    background: rgba(20, 15, 35, 0.65);
+
+    border-radius: 25px;
+
+    backdrop-filter: blur(15px);
+}
+
+.game-card h1 {
+    margin-bottom: 20px;
+}
+
+.question {
+    margin: 30px 0;
+
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.answers {
+    display: grid;
+    gap: 12px;
+}
+
+.answers button {
+    padding: 16px;
+
+    border: none;
+    border-radius: 14px;
+
+    background: rgba(255,255,255,0.15);
+
+    color: white;
+
+    font-size: 18px;
+}
+
+.answers button:active {
+    transform: scale(0.97);
+}
+
+#message {
+    margin-top: 20px;
+    min-height: 25px;
+  }
